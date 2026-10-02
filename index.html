@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Math Challenge</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="div-game">
+    <h1>Math Challenge</h1>
+	
+	<div id="div-questions">
+		<h4>Get 5 correct answers to win!</h4>
+		<div id="question" class="question">
+			1 + 1
+		</div>
+
+		<input id="answer" type="number" placeholder="Enter answer" />
+
+		<br>
+
+		<button id="answerButton" onclick="checkAnswer();">Submit</button>
+
+		<div class="score">
+			Score: <span id="score">0</span> / 5
+		</div>
+
+		<div id="message" class="message"></div>
+	</div>
+
+	<div id="div-success">
+		<h2>Congratulations!<br>You win!!</h2>
+		<button id="playButton" onclick="playAgain();">Play again?</button>
+	</div>
+
+	<script src="scripts.js"></script>
+</body>
+</html>
